@@ -76,14 +76,14 @@
 #include "gpio_if.h"
 
 #include "pinmux.h"
+
 #include "stdbool.h"
 
 #include "gpio_int.h"
 #include "uart_module.h"
+#include "dTim.h"
 
 #define APPLICATION_VERSION     "1.1.1"
-
-extern unsigned long ch;
 
 //*****************************************************************************
 //                 GLOBAL VARIABLES -- Start
@@ -140,27 +140,10 @@ void LEDBlinkyRoutine()
     // The values driven are as required by the LEDs on the LP.
     //
     GPIO_IF_LedOff(MCU_ALL_LED_IND);
-	gpio_int_init(on_button_evt);
+	
 	
     while(1)
     {
-        //
-        // Alternately toggle hi-low each of the GPIOs
-        // to switch the corresponding LED on/off.
-        //
-		//unsigned long read = GPIOPinRead(GPIOA2_BASE, GPIO_PIN_6);
-//		if(ch != 0)
-//		{
-//			char data = (char)ch;
-//			uart_module_send_data(&data, 1);
-//			ch = 0;
-//		}
-		
-//		if(uart_module_read() == 'f')
-//		{
-//			flag = flag? false: true;
-//		}
-//		
 		if(flag)
 		{
 			MAP_UtilsDelay(8000000);
@@ -175,8 +158,7 @@ void LEDBlinkyRoutine()
 			GPIO_IF_LedOn(MCU_GREEN_LED_GPIO);
 			MAP_UtilsDelay(8000000);
 			GPIO_IF_LedOff(MCU_GREEN_LED_GPIO);
-		}
-       
+		}       
     }
 }
 //*****************************************************************************
@@ -243,6 +225,8 @@ main()
     
 	uart_module_init();
 	uart_module_send_data("uart demo\n", 10);
+	timer_init();
+	gpio_int_init(on_button_evt);
     //
     // Start the LEDBlinkyRoutine
     //

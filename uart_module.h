@@ -6,6 +6,7 @@
 #define UART_MODULE_CONSOLE         UARTA0_BASE
 #define UART_MODULE_CONSOLE_PERIPH  PRCM_UARTA0
 
+#define app_uart_put(c)       uart_module_send_data(&c,1)
 
 
 void uart_module_send_data(char *pdata, int len);

@@ -19,6 +19,7 @@
 #define UartPutChar(c)       MAP_UARTCharPut(UART_MODULE_CONSOLE,c)
 
 
+
 void uart_module_send_data(char *pdata, int len)
 {
 	for(int i = 0; i < len; i++)
