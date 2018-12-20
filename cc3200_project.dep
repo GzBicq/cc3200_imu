@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2733599125</fileChecksum>
+  <configuration>
+    <name>cc3200</name>
+    <outputs>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\inv_mpu.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\inv_mpu_dmp_motion_driver.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\stm32L\log_stm32.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\eMPL-hal\eMPL_outputs.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\data_builder.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\hal_outputs.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\message_layer.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\ml_math_func.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\mlmath.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\mpl.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\mpl.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\IAR\libmpllib.a</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\heading_from_gyro.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\mag_disturb.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\timer_if.o</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\accel_auto_cal.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\quaternion_supervisor.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\timer_if.pbi</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\no_gyro_fusion.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\invensense.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\timer_if.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\include\mpu.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\invensense_adv.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\fast_no_motion.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\debug.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\timer.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\gyro_tc.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\mpl.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\mlmath.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\start_manager.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\storage_manager.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\data_builder.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\mpl.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\hal_outputs.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\ml_math_func.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\mlmath.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\results_holder.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\storage_manager.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\start_manager.pbi</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\message_layer.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\ml_math_func.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\include\mlinclude.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\data_builder.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\start_manager.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\storage_manager.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\results_holder.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\hal_outputs.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\motion_no_motion.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\fusion_9axis.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mpl\compass_vec_cal.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\inv_mpu.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\include\stdint_invensense.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\log_stm32.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\include\mltypes.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\include\mlmath.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\stm32L\packet.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\include\log.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\eMPL_outputs.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\eMPL_outputs.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\DeviceSupport\inc\board-st_discovery.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\inv_mpu.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\board-st_discovery.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\log_stm32.o</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\eMPL-hal\eMPL_outputs.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\gpio_int.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\gpio_int.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\uart_module.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\cc3200_project.pbd</file>
+      <file>$PROJ_DIR$\cc3200\Exe\cc3200_project.bin</file>
+      <file>$PROJ_DIR$\cc3200\Obj\startup_ewarm.o</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\inv_mpu_dmp_motion_driver.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\dmpmap.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\dmpKey.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\i2c_module.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\hal_outputs.o</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\startup_ewarm.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\rom.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\main.o</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\utils.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\rom_patch.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\inc\hw_apps_rcm.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\prcm.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\uart.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\pin.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\cc3200\List\cc3200_project.map</file>
+      <file>$PROJ_DIR$\cc3200\Exe\cc3200_project.out</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\inc\hw_memmap.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\results_holder.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\start_manager.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\core\mllite\storage_manager.c</file>
+      <file>$PROJ_DIR$\imu_drivert_core\DeviceSupport\src\board-st_discovery.c</file>
+      <file>$PROJ_DIR$\gpio_int.c</file>
+      <file>$PROJ_DIR$\dTim.c</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\timer_if.c</file>
+      <file>$PROJ_DIR$\uart_module.c</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\gpio_if.c</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\pinmux.c</file>
+      <file>$PROJ_DIR$\cc3200\Obj\startup_ewarm.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\uart_module.o</file>
+      <file>$PROJ_DIR$\i2c_module.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\i2c.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\inc\hw_i2c.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\inv_mpu_dmp_motion_driver.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\inv_mpu.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\inv_mpu_dmp_motion_driver.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\board-st_discovery.o</file>
+      <file>$PROJ_DIR$\uart_module.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\ewarm\Release\Exe\driverlib.a</file>
+      <file>$PROJ_DIR$\cc3200\Obj\pinmux.pbi</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\inc\hw_gpio.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\gpio_if.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\inc\hw_common_reg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\pinmux.o</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\rom_map.h</file>
+      <file>$PROJ_DIR$\pinmux.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\inc\hw_ints.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\inc\hw_types.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\interrupt.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\gpio_if.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\gpio_if.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\button_if.h</file>
+      <file>$PROJ_DIR$\gpio_int.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\i2c_if.c</file>
+      <file>$PROJ_DIR$\i2c_module.c</file>
+      <file>$PROJ_DIR$\cc3200\Obj\message_layer.pbi</file>
+      <file>$PROJ_DIR$\cc3200\Obj\i2c_module.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\data_builder.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\ml_math_func.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\message_layer.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\results_holder.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\dTim.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\i2c_if.o</file>
+      <file>$PROJ_DIR$\cc3200\Obj\dTim.pbi</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\example\common\i2c_if.h</file>
+      <file>$PROJ_DIR$\cc3200\Obj\i2c_if.pbi</file>
+      <file>$PROJ_DIR$\dTim.h</file>
+      <file>$PROJ_DIR$\..\cc3200-sdk\driverlib\i2c.c</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 103 102</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\inv_mpu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 127</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 65 66 97 144 154 99 121 101 72 123 71 95 140 69 104 139 108 143 145 89 58 170</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 88 97 108 145 89 143 140 144 95 121 154 101 99 66 69 58 72 123 65 71 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\driver\eMPL\inv_mpu_dmp_motion_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 144 143 89 83 69 88 66 154 82 123 108 145 97 99 121 101 72 84 71 95 140 58 139 170</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 88 97 108 145 89 143 140 144 95 121 154 101 99 66 69 58 72 82 84 83 123 71 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\driver\stm32L\log_stm32.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 144 89 104 88 101 154 65 108 145 97 61 121 64 130 95 140 99 62 59 70 139</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 88 97 108 145 89 143 140 144 95 121 154 101 99 64 62 59 61 70 65 130</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\eMPL-hal\eMPL_outputs.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 89 48 88 97 63 61 69 62 46 49 51 59 70 101 108 145 75 121 140 144 99 66 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 75 62 59 121 88 97 108 145 89 143 140 101 144 99 61 70 46 63 66 69 58 49 48 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\data_builder.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 161</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99 101 69 65 61 88 63 108 145 97 46 45 144 143 89 48 50 51 140 62 59 70 121 104 66 58 154</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 88 97 108 145 89 143 140 144 99 46 62 59 121 61 70 48 63 66 69 58 50 45 51 65 154</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\hal_outputs.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 144 154 143 89 63 61 101 65 48 99 108 145 62 97 66 58 52 46 49 51 140 59 70 121 104 69</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 88 97 108 145 89 143 140 144 99 52 62 59 121 61 70 65 154 46 63 66 69 58 49 48 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\message_layer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 159</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 163</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 97 121 145 88 70 65 62 61 101 108 143 89 104 45 140 144 99 154</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45 62 59 121 88 97 108 145 89 143 140 101 144 99 61 70 65 154</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\ml_math_func.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 162</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 97 47 140 61 101 144 46 66 58 99 63 69 108 143 145 89 62 59 70 121</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63 66 88 69 97 108 145 89 143 140 58 46 62 59 121 101 144 99 61 70 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\mlmath.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69 108 145 97 143 89 88 58 140 66</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66 88 69 97 108 145 89 143 140 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\mpl.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 88 89 144 62 48 97 104 10 47 61 101 108 145 65 49 51 59 70 121 140 99 154 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 62 59 121 88 97 108 145 89 143 140 101 144 99 61 70 65 154 10 49 48 51 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\cc3200-sdk\example\common\startup_ewarm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151 149 150</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 149 151</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\cc3200\Exe\cc3200_project.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 138 129 161 165 68 153 77 86 166 160 127 128 74 91 163 162 34 33 146 164 35 81 36 15 122 135 12 134 132 133</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\results_holder.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61 140 97 101 62 88 49 104 46 45 69 144 51 63 48 65 99 108 143 145 89 59 70 121 66 58 154</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 88 97 108 145 89 143 140 144 99 51 62 59 121 61 70 46 63 66 69 58 49 48 45 65 154</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\start_manager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 97 62 49 108 140 70 101 65 144 99 143 104 59 145 89 154 61 121</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 88 97 108 145 89 143 140 144 99 65 154 49 62 59 121 61 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\core\mllite\storage_manager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97 88 63 144 65 140 61 101 154 143 50 46 99 108 145 89 62 59 70 121 104 69 66 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 88 97 108 145 89 143 140 144 99 50 62 59 121 61 70 65 154 46 63 66 69 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\imu_drivert_core\DeviceSupport\src\board-st_discovery.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 88 97 108 140 121 145 89 71 170</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121 88 97 108 145 89 143 140 71 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\gpio_int.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105 147 155 143 149 151 100 97 108 145 150 90 107 96 156 88 144 89 93 154 140</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 154 88 97 108 145 89 143 140 144 150 149 90 147 93 107 151 100 105 96 156 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\dTim.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 167</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 165</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 151 149 90 170 105 27 30 147 22 93 150</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 105 149 27 151 30 90 147 93 96 22 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\cc3200-sdk\example\common\timer_if.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 151 149 90 105 27 30 147 22 150 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 105 149 27 151 30 90 147 93 96 22</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\uart_module.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 98 99 150 149 143 89 95 139 96 147 108 145 97 144 154 101 105 100 90 130 151 140 104 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 154 88 97 108 145 89 143 140 144 139 95 101 99 150 105 96 100 98 90 147 93 130 149 151</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\cc3200-sdk\example\common\gpio_if.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 152</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108 97 88 145 96 94 93 149 100 147 144 143 89 150 105 151 107 90 141 95 140 139</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 88 97 108 145 89 143 140 144 95 150 149 105 94 151 100 107 96 90 147 93 141</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97 148 24 51 62 101 94 140 88 14 21 149 96 130 95 11 23 69 45 47 104 26 139 72 75 64 142 90 92 156 29 143 144 170 48 46 50 61 16 32 19 121 28 66 154 71 82 25 65 150 105 151 147 107 141 131 123 108 145 89 20 31 54 99 58 52 63 10 49 59 70 56 55 13 53 17 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 131 121 88 97 108 145 89 143 140 139 144 95 28 20 11 23 154 29 31 54 101 99 66 69 58 71 170 72 82 21 48 62 59 61 70 52 45 63 46 10 51 49 50 65 47 25 16 56 26 55 32 13 14 53 19 17 75 24 64 150 149 105 142 151 94 96 90 147 93 107 92 141 148 156 123 130</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pinmux.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 146</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 100 105 147 150 137 90 107 148 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 148 150 105 137 100 90 147 93 107 96</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\cc3200-sdk\example\common\i2c_if.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 166</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 97 89 100 88 105 168 154 125 147 108 145 121 150 149 124 90 96 140 144 93 131</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 131 121 88 97 108 145 89 143 140 154 144 150 105 149 125 124 100 90 147 93 96 168</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\i2c_module.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 160</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 107 88 137 144 150 90 168 99 143 89 148 105 100 147 96 123 97 108 145 101 140 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 88 97 108 145 89 143 140 144 99 148 150 105 137 100 90 147 93 107 96 168 123</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+
