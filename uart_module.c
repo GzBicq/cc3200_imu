@@ -10,8 +10,10 @@
 #include "uart.h"
 #include "rom.h"
 #include "rom_map.h"
-
 #include "uart_module.h"
+
+#include "hw_ints.h"
+#include "interrupt.h"
 
 #define UartGetChar()        MAP_UARTCharGet(UART_MODULE_CONSOLE)
 #define UartPutChar(c)       MAP_UARTCharPut(UART_MODULE_CONSOLE,c)
@@ -21,7 +23,7 @@ void uart_module_send_data(char *pdata, int len)
 {
 	for(int i = 0; i < len; i++)
 	{
-		UartPutChar(pdata[i]);	
+		UARTCharPutNonBlocking(UART_MODULE_CONSOLE, pdata[i]);	
 	}
 
 }
@@ -29,22 +31,21 @@ void uart_module_send_data(char *pdata, int len)
 void uart_module_handler(void)
 {	
 	unsigned long ch = UARTCharGetNonBlocking(UART_MODULE_CONSOLE);
-	
-	UartPutChar(ch);
-	
+	UARTCharPutNonBlocking(UART_MODULE_CONSOLE,ch);	
+	MAP_UARTIntClear(UARTA0_BASE,UART_INT_RX);
 	
 }
 
 void uart_module_register(void)
 {
-	UARTIntEnable(UART_MODULE_CONSOLE, UART_INT_RX);
-	UARTFIFOEnable(UART_MODULE_CONSOLE);
 	UARTIntRegister(UART_MODULE_CONSOLE, uart_module_handler);
+	UARTIntEnable(UART_MODULE_CONSOLE, UART_INT_RX);
+	MAP_IntPrioritySet(INT_UARTA0, INT_PRIORITY_LVL_1);
 }
 
 unsigned char uart_module_read(void)
 {
-	(unsigned char)UartGetChar();
+	return (unsigned char)UartGetChar();
 }
 
 void uart_module_init(void)

@@ -83,6 +83,8 @@
 
 #define APPLICATION_VERSION     "1.1.1"
 
+extern unsigned long ch;
+
 //*****************************************************************************
 //                 GLOBAL VARIABLES -- Start
 //*****************************************************************************
@@ -104,6 +106,7 @@ void LEDBlinkyRoutine();
 static void BoardInit(void);
 
 bool flag = false;
+
 
 void on_button_evt(void)
 {
@@ -146,12 +149,18 @@ void LEDBlinkyRoutine()
         // to switch the corresponding LED on/off.
         //
 		//unsigned long read = GPIOPinRead(GPIOA2_BASE, GPIO_PIN_6);
+//		if(ch != 0)
+//		{
+//			char data = (char)ch;
+//			uart_module_send_data(&data, 1);
+//			ch = 0;
+//		}
 		
 //		if(uart_module_read() == 'f')
 //		{
 //			flag = flag? false: true;
 //		}
-		
+//		
 		if(flag)
 		{
 			MAP_UtilsDelay(8000000);
@@ -232,8 +241,8 @@ main()
 
     GPIO_IF_LedOff(MCU_ALL_LED_IND);
     
-//	uart_module_init();
-//	uart_module_send_data("uart demo\n", 10);
+	uart_module_init();
+	uart_module_send_data("uart demo\n", 10);
     //
     // Start the LEDBlinkyRoutine
     //
