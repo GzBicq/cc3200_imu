@@ -8,6 +8,7 @@
 #include "pin.h"
 #include "hw_memmap.h"
 #include "prcm.h"
+#include "pin.h"
 
 #ifdef SL_PLATFORM_MULTI_THREADED  /* If OS-based application */
 #include "osi.h"
@@ -23,11 +24,11 @@ gpio_handler_t g_m_gpio_handler;
 void gpio_hanlder(void)
 {
 
-    unsigned long ulPinState =  GPIOIntStatus(GPIOA2_BASE,1);
+    unsigned long ulPinState =  GPIOIntStatus(GPIOA1_BASE,1);
 
-    if(ulPinState & GPIO_PIN_6)
+    if(ulPinState & GPIO_PIN_5)
     {
-        MAP_GPIOIntClear(GPIOA2_BASE, GPIO_PIN_6);
+        MAP_GPIOIntClear(GPIOA1_BASE, GPIO_PIN_5);
         g_m_gpio_handler();
     }
 }
@@ -36,11 +37,11 @@ void gpio_hanlder(void)
 void gpio_int_init(gpio_handler_t m_gpio_handler)
 {
 
-	MAP_PRCMPeripheralClkEnable(PRCM_GPIOA2, PRCM_RUN_MODE_CLK);
+	MAP_PRCMPeripheralClkEnable(PRCM_GPIOA1, PRCM_RUN_MODE_CLK);
 	
-	MAP_PinTypeGPIO(PIN_15, PIN_MODE_0, false);
+	MAP_PinTypeGPIO(PIN_04, PIN_MODE_0, false);
 	
-	MAP_GPIOIntTypeSet(GPIOA2_BASE, GPIO_PIN_6, GPIO_FALLING_EDGE);
+	MAP_GPIOIntTypeSet(GPIOA1_BASE, GPIO_PIN_5, GPIO_FALLING_EDGE);
 
 	g_m_gpio_handler = m_gpio_handler;
 	
@@ -51,16 +52,16 @@ void gpio_int_init(gpio_handler_t m_gpio_handler)
 // USE_TIRTOS: if app uses TI-RTOS (either networking/non-networking)
 // USE_FREERTOS: if app uses Free-RTOS (either networking/non-networking)
 // SL_PLATFORM_MULTI_THREADED: if app uses any OS + networking(simplelink)
-	osi_InterruptRegister(INT_GPIOA2,(P_OSI_INTR_ENTRY)gpio_hanlder, \
+	osi_InterruptRegister(INT_GPIOA1,(P_OSI_INTR_ENTRY)gpio_hanlder, \
 							INT_PRIORITY_LVL_1);
 #else                
-	MAP_IntPrioritySet(INT_GPIOA2, INT_PRIORITY_LVL_1);
-	MAP_GPIOIntRegister(GPIOA2_BASE, gpio_hanlder);
+	MAP_IntPrioritySet(INT_GPIOA1, INT_PRIORITY_LVL_1);
+	MAP_GPIOIntRegister(GPIOA1_BASE, gpio_hanlder);
 #endif    
-						
+	
 	//
 	// Enable Interrupt
 	//
-	MAP_GPIOIntClear(GPIOA2_BASE,GPIO_PIN_6);
-	MAP_GPIOIntEnable(GPIOA2_BASE,GPIO_INT_PIN_6);
+	MAP_GPIOIntClear(GPIOA1_BASE, GPIO_PIN_5);
+	MAP_GPIOIntEnable(GPIOA1_BASE, GPIO_INT_PIN_5);
 }
