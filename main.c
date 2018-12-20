@@ -152,7 +152,7 @@ void LEDBlinkyRoutine()
 //			flag = flag? false: true;
 //		}
 		
-		//if(flag)
+		if(flag)
 		{
 			MAP_UtilsDelay(8000000);
 			GPIO_IF_LedOn(MCU_RED_LED_GPIO);
